@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+
+}
+
+form {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-image: url('https://i.pinimg.com/originals/20/43/14/204314074cdff584f32a03e5aac3ebb9.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+.input-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.input-container input {
+  display: block;
+  padding: 8px 10px;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+
+.input-container input[type="checkbox"] {
+  display: inline;
+  width: auto;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button {
+  background: rgba(19, 169, 255, 0.979);
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: aliceblue;
+  box-shadow: -12px 7px 17px 0px rgba(0,0,0,0.75);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+form button i{
+  font-size: 25px;
+}
+
+form button:hover{
+  box-shadow: 15px 15px 15px gray;
+  scale: 1.1;
+  transition: all 0.4s;
+  background-color: rgba(0, 38, 255, 0.685);
+  color:whitesmoke;
+}
+
+.products-list {
+  width: 50%;
+}
+
+.products-list ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.products-list ul li {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.products-list ul li h4 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+
+#description{
+height: 10rem;
+}
+
+.user-list{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://1.bp.blogspot.com/-Ik0Dolw1Sik/XteOFjy9q3I/AAAAAAAIL_Q/59yd6S55V3soE686LSB2Fus-HKmym1kGgCLcBGAsYHQ/s1600/5f76d1dc-86aa-4e2d-82a5-52a15caf59c1.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:100vh;
+  padding-top: 2rem;
+  }
+
+
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-y: scroll;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.container::-webkit-scrollbar{
+  width: 7px;
+  background:linear-gradient(77deg,#006fff 0%, #00ff4e 80%); ;
+  border-radius: 1rem;
+}
+
+.container::-webkit-scrollbar-thumb{
+  background: linear-gradient(61deg,#a500ff 0%, #ff00dd 80%); ;
+  border-radius: 1rem ;
+  border: 1px solid black;
+}
+
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: white;
+  border-bottom: 2px solid rgb(20, 20, 20);
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #e8e9eb;
+}
+
+.users-container{
+  width: 23rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  border: 2px solid cyan;
+  background-image: url("https://i.pinimg.com/originals/21/5c/7f/215c7fdca6033092baa04b35c17466bd.gif");
+  background-repeat: no-repeat;
+}
+
+.user-list b{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5460ef;
+}
+
+.user-list ul{
+  padding: 1rem;
+}
+
+
+.user-list li{
+  width: 15rem;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 5px;
+  font-size: 20px;
+  color: whitesmoke;
+}  
+
+
+.form-container{
+  border: 3px solid purple;
+  width: 25rem;
+  box-shadow: -1px 3px 13px 3px rgb(0 0 0 / 75%);
+  border-radius: 1rem;
+  padding: 2rem;
+  background-image:url("https://media2.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80vh;
+}
+
+.btn-user{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.btn-user i{
+  font-size: 20px;
+}
+
+
+label{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.input-container i {
+  font-size: 20px;
+  color:rgb(63, 255, 229) ;
+}
+
+.btn{
+  width: 5rem;
+  box-shadow: -12px 12px 20px -7px rgba(0,0,0,0.75);
+}
+
+.btn:hover{
+  box-shadow: 15px 15px 15px gray;
+  scale: 1.1;
+  transition: all 0.4s;
+  color:whitesmoke;
+}
+
+.red{
+  background-color: rgb(255, 68, 68);
+}
+
+.green{
+  background-color: rgba(14, 255, 66, 0.699);
+}
+
+@media screen and (max-width:600px) {
+
+  .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form{
+    width: 100%;
+
+  }
+  .form-container{
+    width: 20rem;
+    background-size:90vh ;
+  }
+
+  .user-list{
+    width: 100%;
+  }
+
+  .users-container{
+    width: 20rem;
+  }
+
+}
