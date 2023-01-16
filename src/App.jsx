@@ -4,7 +4,6 @@ import axios from 'axios'
 import './App.css'
 import UsersList from './assets/Components/UsersList'
 import UsersForm from './assets/Components/UsersForm'
-import Users from './assets/Components/Users'
 
 function App() {
 
@@ -48,7 +47,6 @@ console.log("soy un console.log" + UserList);
     getUsers={getUsers}
     />
 
-    <Users/>
 
     </div>
   )

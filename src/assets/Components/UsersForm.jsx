@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 const UsersForm = ({getUsers, userSelected, selectUser}) => {
@@ -33,9 +33,17 @@ const UsersForm = ({getUsers, userSelected, selectUser}) => {
     }
   }
 
+
+  const [isVisible, setisVisible] = useState(false)
+
+  const changeVisible = () => {
+    setisVisible(!isVisible)
+  }
+ 
+
   return (
 <form onSubmit={handleSubmit(submit)}>   
-  <h1>Register <i class="fa-solid fa-address-card"></i></h1>
+  <h1>Register <i className="fa-solid fa-address-card"></i></h1>
 
   <div className='form-container'> 
     <div className="input-container">
@@ -67,13 +75,16 @@ const UsersForm = ({getUsers, userSelected, selectUser}) => {
     </div>
 
 
-    <div className="input-container">
+    <div className="input-container-password">
       <label htmlFor="password"><i className="fa-solid fa-lock"></i> Password</label>
+      <div className='btn-container'>
       <input 
-          type="password" 
+          type={isVisible ? "text" : "password"} 
           id='password'    
           {...register("password")}    
-      />
+      /> 
+      <button onClick={changeVisible}><i className="fa-solid fa-eye-slash"></i></button>
+    </div>
     </div>
     
     <div className="input-container">

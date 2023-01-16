@@ -13,7 +13,7 @@ const UsersList = ({UserList, selectUser, getUsers}) => {
   
       <div className='user-list'>
     <div className='container'>
-      <h1>Users  <i class="fa-solid fa-users"></i></h1>
+      <h1>Users  <i className="fa-solid fa-users"></i></h1>
       {
             userListOrd.map(user =>(
               <div className='users-container' key={user.id}>
